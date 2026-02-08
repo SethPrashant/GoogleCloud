@@ -1,0 +1,8 @@
+config {
+    type:"table",
+    description: "Desc"
+}
+
+select sum(number) as agg_sum  from ${ref("source_table")}
+
+
